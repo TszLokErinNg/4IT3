@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--SA：I, Erin Ng, 400360728 certify that this material is my original work.
+No other person's work has been used without due acknowledgement.
+I have also not made my work available to anyone else.-->
+
+<head><title>Erin Ng 400360728 Lab L01</title>
+    <style>
+        body {
+            text-align: left;
+            font-family: Arial, sans-serif;
+        }
+
+        table{
+            width: 800px;
+            /*border-collapse: collapse;*/
+            text-align: center;
+
+
+        }
+        /*th, td {*/
+        /*    border: 1px dotted black;*/
+        /*    padding: 8px;*/
+
+        /*}*/
+        th {
+            background-color: black;
+            color: white;
+
+        }
+        .header-container {
+            display: table;
+            align-items: center;
+
+
+        }
+
+        #top-border{
+            border-top: #0000ff solid 10px;
+            border-top-left-radius: 40px;
+            border-top-right-radius: 40px;
+
+            
+        }
+        #odd{
+            background-color: lightgray;
+            border-collapse: collapse;
+            border: 1px dotted black;
+            color: black;
+        }
+        #even{
+            background-color: darkgray;
+
+            color: black;
+        }
+
+        .no-data{
+            background: repeating-linear-gradient(45deg, white, red 10px, white 10px, red 20px);
+            color: white;
+            font-weight: bold;
+        }
+        .footer-text {
+            font-size: 12px;
+            color: gray;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <table id="top-border">
+        <tr>
+            <td>
+            <img src="ambient_air_logo.png" alt="ambientlogo" align="left">
+            
+            </td>
+            <td>
+                <h1 style="color: blue;text-align: left">Ambient Air Service <br>Company</h1>
+                <p style="font-style: italic; color: blue; text-align: left;">Monitor to make breathing easier </p>
+            </td>
+        </tr>
+    </table>
+    <table class="header-container">
+        <tr>
+            <td colspan="8" style="text-align: center">Ambient Air Quality in Hamilton 2005-2016</td>
+        </tr>
+    </table>
+    <table style="border: 1px dotted black; border-collapse: collapse">
+        <tr>
+            <th rowspan="2"  style="border: 1px dotted white;">Year</th>
+            <th colspan="2" style="border: 1px dotted white;"># of Days</th>
+            <th rowspan="2" style="border: 1px dotted white;">Notes</th>
+        </tr>
+        <tr >
+            <th >Smog Advisory</th>
+            <th>Poor Air Quality</th>
+        </tr>
+        <tr id="even"><td style="border: 1px dotted black" >2006</td><td style="border: 1px dotted black">5</td><td style="border: 1px dotted black">11</td><td style="border: 1px dotted black"></td></tr>
+        <tr id="odd"><td style="border: 1px dotted black">2007</td><td style="border: 1px dotted black">17</td><td style="border: 1px dotted black">32</td><td style="border: 1px dotted black">August had many foggy mornings</td></tr>
+        <tr id="even"><td style="border: 1px dotted black">2008</td><td style="border: 1px dotted black">5</td><td style="border: 1px dotted black">11</td><td style="border: 1px dotted black"></td></tr>
+        <tr id="odd"><td style="border: 1px dotted black">2009</td><td style="border: 1px dotted black">1</td><td style="border: 1px dotted black">4</td><td style="border: 1px dotted black"></td></tr>
+        <tr id="even"><td style="border: 1px dotted black">2010</td><td style="border: 1px dotted black">5</td><td style="border: 1px dotted black">8</td><td style="border: 1px dotted black"></td></tr>
+        <tr id="odd"><td style="border: 1px dotted black">2011</td><td style="border: 1px dotted black">8</td><td style="border: 1px dotted black">2</td><td style="border: 1px dotted black"></td></tr>
+        <tr id="even"><td style="border: 1px dotted black">2012</td><td style="border: 1px dotted black">9</td><td style="border: 1px dotted black">17</td><td style="border: 1px dotted black">High amount of Construction in June</td></tr>
+        <tr id="odd"><td style="border: 1px dotted black">2013</td><td style="border: 1px dotted black">9</td><td style="border: 1px dotted black">2</td><td style="border: 1px dotted black"></td></tr>
+        <tr id="even"><td style="border: 1px dotted black">2014</td><td colspan="3" class="no-data" ></td></tr>
+        <tr id="odd"><td style="border: 1px dotted black">2015</td><td colspan="3" class="no-data" >No Data Available</td></tr>
+        <tr id="even"><td style="border: 1px dotted black">2016</td><td colspan="3" class="no-data"></td></tr>
+    </table>
+
+
+    
+
+</body>
+<p class="footer-text" style="text-align: left">
+    Data from Downtown Hamilton Air Monitoring Station<br>
+</p>
+<i>&copyData from Downtown Hamilton Air Monitoring Station</i>

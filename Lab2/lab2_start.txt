@@ -1,0 +1,19 @@
+Ambient Air Quality in Hamilton 2005-2016
+Year    # of Days     Notes
+Smog Advisory Poor Air Quality
+
+2005 20 45  July had 10 days of each
+2006  5 11
+2007 17 32  August had many foggy mornings
+2008  5 11
+2009  1  4
+2010  5  8
+2011  8  2
+2012  9 17  High amount of Construction in June
+2013  9  2
+2014
+2015  No Data Available
+2016
+
+Data from Downtown Hamilton Air Monitoring Station
+The Ambient Air Service Company, 4242 Barton St E., Hamilton Ontario, L8M 3H9 
