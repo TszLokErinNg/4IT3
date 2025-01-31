@@ -1,0 +1,37 @@
+ACME Corporation - Lab Analysis
+
+Step 1: Identification
+      Employee ID
+      Employee Name
+
+Step 2: Metal Analysis Selection
+      Normal
+	    Duplicate
+	    Extra Sample
+	    Emergency
+		 
+      Sample Bottle ID
+      Sample Date
+      Sample Time
+
+      Analysis Required
+
+      Select all metal samples analysis that apply
+      Fe -Iron
+      Mg - Magnesium
+      Cd - Cadmium
+      Hg - Mercury
+
+Step 3: Other Information & Submission
+
+Reason
+Internal Sampling
+Government Inspection
+QA/QC
+			
+Comments
+
+* indicates a required field
+
+Acme Corp 801 Industrial Drive Whitehorse, YK Y1A 3M1 youremail@mcmaster.ca
+

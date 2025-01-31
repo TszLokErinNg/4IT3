@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--SA：I, Erin Ng, 400360728 certify that this material is my original work.
+ No other person's work has been used without due acknowledgement.
+ I have also not made my work available to anyone else.-->
+<head>
+    <meta charset="UTF-8">
+    <title>Erin Ng 400360728 Lab L01</title>
+    <style>
+        h1{
+            font-weight: bold;
+            font-family: Arial, sans-serif;
+            font-size:large;
+
+        }
+        input {
+            color: green;
+            font-weight: bold;
+
+        }
+        select,textarea,input{
+            margin-left:50px
+        }
+        fieldset{
+            border: 2px solid blue;
+            border-collapse: collapse;
+            background: lightgray;
+            font-family: Arial, sans-serif;
+
+        }
+        legend{
+            color: white;
+            font-weight: bold;
+            background: blue;
+        }
+        .container {
+
+            margin: auto;
+        }
+        .footnotes{
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<form action="https://4it3.sept.mcmaster.ca/ngt32/Lab3/echo_lab3.php" method="post">
+    <h1 style="font-weight: bold">ACME Corporation - Lab Analysis</h1>
+    <fieldset>
+        <legend>Step 1: Identification</legend>
+    <table>
+        <tr>
+            <td><label>Employee ID</label></td>
+            <td><input type="number" maxlength="4"  name="EmployeeIDField" value="0728" required/></td>
+            <td>*</td>
+        </tr>
+        <tr>
+            <td><label>Employee Name</label></td>
+            <td><input type="text" name="EmployeeNameField" required/></td>
+            <td>*</td>
+        </tr>
+    </table>
+    </fieldset>
+    <br>
+
+    <fieldset>
+
+        <legend>Step 2: Metal Analysis Selection</legend>
+        <table>
+            <tr>
+            <td>
+                <input type="radio" name="MetalAnalysisSelection" value="Normal" style="margin-left:0">Normal
+                <input type="radio" name="MetalAnalysisSelection" value="Duplicate" style="margin-left:0">Duplicate
+                <input type="radio" name="MetalAnalysisSelection" value="Extra Sample" style="margin-left:0">Extra Sample
+                <input type="radio" name="MetalAnalysisSelection" value="Emergency" style="margin-left:0">Emergency
+            </td>
+            </tr>
+            <tr>
+                <td><label>Sample Bottle ID</label>
+                <input type="number" name="SampleBottleID" required/>*</td>
+            </tr>
+            <tr>
+                <td><label>Sample Date</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <input type="date" name="SampleDate" required/>*</td>
+            </tr>
+            <tr>
+                <td><label>Sample Time</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <input type="time" name="SampleTime" required/>*</td>
+            </tr>
+        </table>
+
+        <!--Analysis Required:-->
+        <fieldset style="float: right; width: 50%; margin-top: -50px;">
+            <legend >Analysis Required</legend>
+            <p>Select all metal samples analysis that apply:</p>
+
+                <input name="analysis[]" type="checkbox" value="Fe- Iron" checked> Fe - Iron <br>
+                <input name="analysis[]" type="checkbox" value="Mg - Magnesium"> Mg - Magnesium <br>
+                <input name="analysis[]" type="checkbox" value="Cd - Cadmium" checked> Cd - Cadmium <br>
+                <input name="analysis[]" type="checkbox" value="Hg - Mercury"> Hg - Mercury <br>
+
+        </fieldset>
+
+    </fieldset>
+
+    <br>
+    <fieldset>
+        <legend>Step 3: Other Information & Submission</legend>
+        <table>
+            <tr>
+                <td><label>Reason</label></td>
+                <td>
+                    <select style="color: green; font-weight: bold;" id="options" name="options">
+                        <option value="Internal Sampling">Internal Sampling</option>
+                        <option value="Government Inspection">Government Inspection</option>
+                        <option value="QA/QC">QA/QC</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label>Comments</label></td>
+                <td><textarea name="comments" style="margin-top: 11%; color: black" rows="4" cols="50"></textarea></td>
+            </tr>
+        </table>
+    </fieldset>
+    <p class="footnotes">* indicates a required field&nbsp<input type="submit" value="Submit" style="color: black">&nbsp<input type="Reset" value="Reset Form Data to Defaults" style="color: black"></p>
+    <p class="footnotes"><a href="https://acme.com/">Acme Corp</a> 801 Industrial Drive Whitehorse, YK Y1A 3M1 <a href="ngt32@mcmaster.ca">ngt32@mcmaster.ca</a></p>
+
+
+</form>
+
+</body>
+</html>

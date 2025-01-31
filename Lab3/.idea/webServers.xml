@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="9070dd6f-fca0-4dd9-a915-a5e7a31b6a00" name="4it3" url="">
+        <fileTransfer rootFolder="/home/ngt32@ads.mcmaster.ca" accessType="SFTP" host="4it3.sept.mcmaster.ca" port="22" sshConfigId="95b8da0c-763a-41dc-a5cd-8968219080e6" sshConfig="ngt32@mcmaster.ca@4it3.sept.mcmaster.ca:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
