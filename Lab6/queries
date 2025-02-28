@@ -1,0 +1,46 @@
+/*ALL QUERIES*/
+
+/*Q1: Distinct*/
+SELECT DISTINCT City FROM employees;
+
+/*Q2: Order by*/
+SELECT ProductName, UnitsInStock, Unitprice, CAST((UnitPrice*UnitsInStock) as decimal(10,2)) as 'Value' FROM products WHERE Discontinued = 'y' AND UnitsInStock > 0 ORDER BY ProductName;
+
+/*Q3: Group by*/
+SELECT country, count(*) as supplier_count FROM suppliers GROUP BY country;
+
+/*Q4: Two Table Join*/
+SELECT c.CategoryName, ROUND(AVG(p.UnitPrice),2) as average_unit_price
+FROM categories c
+    join products p ON c.CategoryID = p.CategoryID
+    GROUP BY c.CategoryName
+    ORDER BY average_unit_price desc;
+
+
+/*Q5:Three Table Join*/
+SELECT o.CustomerID,c.CompanyName, DATE(o.OrderDate) as order_date, ROUND(SUM(od.Quantity*od.UnitPrice),2) as total_sale FROM orders o
+    join order_details od on o.OrderID = od.OrderID
+    join customers c on o.CustomerID = c.CustomerID
+WHERE o.OrderDate BETWEEN '2013-09-01' AND '2013-09-30'
+GROUP BY o.CustomerID,c.CompanyName,o.OrderID,o.OrderDate
+HAVING  total_sale > 300.00
+ORDER BY total_sale desc;
+
+
+/*Q6:Four Table Join*/
+SELECT c.CompanyName, p.ProductName, COUNT(od.ProductID) as Products FROM customers c
+JOIN orders o on c.CustomerID = o.CustomerID
+JOIN order_details od on o.OrderID = od.OrderID
+JOIN products p on p.ProductID = od.ProductID
+GROUP BY c.CompanyName, p.ProductName
+HAVING COUNT(o.ShipVia) >=4
+ORDER BY Products DESC, c.CompanyName ASC;
+
+
+/*Q7:LEFT OUTER  Join*/
+SELECT c.companyname AS Customer, COUNT(o.orderid) AS Order_Count
+FROM customers c
+LEFT JOIN orders o ON c.customerid = o.customerid
+GROUP BY c.companyname
+HAVING COUNT(o.orderid) <= 3
+ORDER BY Order_Count DESC, Customer ASC;
