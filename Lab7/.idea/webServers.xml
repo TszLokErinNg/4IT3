@@ -2,7 +2,7 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="79e39ac9-0ef5-4ce8-aa8c-054b2b9ef399" name="4it3.sept.mcmaster.ca" url="https://4it3.sept.mcmaster.ca/ngt32/Lab7/lab7b.php">
+      <webServer id="79e39ac9-0ef5-4ce8-aa8c-054b2b9ef399" name="4it3.sept.mcmaster.ca" url="https://4it3.sept.mcmaster.ca/ngt32/Lab7/Lab7b.php">
         <fileTransfer rootFolder="/home/ngt32@ads.mcmaster.ca" accessType="SFTP" host="4it3.sept.mcmaster.ca" port="22" sshConfigId="c69ff900-f321-43ee-b15f-3e68ba31f348" sshConfig="ngt32@mcmaster.ca@4it3.sept.mcmaster.ca:22 password">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
