@@ -1,4 +1,5 @@
 CREATE TABLE LabTech(
+CREATE TABLE LabTech(
     LabTech_id char(4) NOT NULL PRIMARY KEY ,
     firstname char(50) NOT NULL,
     lastname char(50) NOT NULL

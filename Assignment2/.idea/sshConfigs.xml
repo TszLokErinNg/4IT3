@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" host="4it3.sept.mcmaster.ca" id="fd1044ec-2919-4c72-a5c3-3b635aa4ec5e" port="22" nameFormat="DESCRIPTIVE" username="ngt32" useOpenSSHConfig="true" />
+    </configs>
+  </component>
+</project>
